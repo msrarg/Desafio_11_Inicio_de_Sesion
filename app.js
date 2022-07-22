@@ -1,6 +1,15 @@
-const Server = require('./models/server.js');
+require("dotenv/config");
+const app = require("./src/server");
+
+const port = process.env.PORT || 8080;
+app.listen(port, () => {
+  console.log("Server up on port:", port);
+});
+
+
+/*
+const Server = require('./src/server');
 
 const server = new Server();
 server.listen();
-
-// npm install body-parser connect-mongo cookie-parser dotenv express express-handlebars express-session handlebars
+*/

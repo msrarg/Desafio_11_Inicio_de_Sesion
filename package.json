@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/msrarg/Desafio_11_Inicio_de_Sesion#readme",
   "dependencies": {
+    "bcrypt": "^5.0.1",
     "body-parser": "^1.20.0",
     "connect-mongo": "^4.6.0",
     "cookie-parser": "^1.4.6",
@@ -24,6 +25,9 @@
     "express": "^4.18.1",
     "express-handlebars": "^6.0.6",
     "express-session": "^1.17.3",
-    "handlebars": "^4.7.7"
+    "handlebars": "^4.7.7",
+    "mongoose": "^6.4.6",
+    "passport": "^0.6.0",
+    "passport-local": "^1.0.0"
   }
 }

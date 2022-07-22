@@ -1,0 +1,39 @@
+<p class="text-end"><a href="/login" role="button">Login</a></p>
+<div class="p-2 bg-light rounded">
+  <p class="display-6 text-primary">Registro de Usuario</p>
+  <p>
+    <form action="/signup" method="post">
+      <div class="mb-3">
+        <label class="form-label">Ingrese su nombre:</label>
+        <input
+          type="text"
+          class="form-control"
+          name="nombre"
+          placeholder="ej: Juan Perez"
+          required
+        />
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Ingrese su correo electronico:</label>
+        <input
+          type="email"
+          class="form-control"
+          name="email"
+          placeholder="ej: juanperez@servidor.com"
+          required
+        />
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Ingrese una contraseña:</label>
+        <input
+          type="password"
+          class="form-control"
+          name="password"
+          placeholder="[Palabra secreta sin espacios]"
+          required
+        />
+      </div>
+      <button type="submit" class="btn btn-success">Enviar</button>
+    </form>
+  </p>
+</div>
