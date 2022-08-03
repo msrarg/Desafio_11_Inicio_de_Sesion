@@ -1,0 +1,74 @@
+        <div class="row">
+            <div class="card text-bg-success">
+                <div class="card-body d-flex justify-content-between">
+                <h3>Bienvenida/o {{userName}} ({{userEmail}})</h3><a class="btn btn-primary" href="/logout">Salir</a>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="card text-bg-light">
+                <div class="card-body" >
+                <h3>Ingrese producto</h3>
+                <form  id="form_producto">
+                    <div class="mb-3">
+                        <label for="nombre" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="nombre" name="nombre">
+                        <div class="invalid-feedback"></div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="precio" class="form-label">Precio</label>
+                        <input type="number" class="form-control" id="precio" name="precio">
+                        <div class="invalid-feedback"></div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="foto" class="form-label">Foto URL</label>
+                        <input type="url" class="form-control" id="foto" name="foto">
+                        <div class="form-text">Image sample: https://cdn.icon-icons.com/icons2/3556/PNG/128/image_photo_photography_camera_icon_225026.png</div>
+                        <div class="invalid-feedback"></div>
+                    </div>
+                    <input type="button" class="btn btn-success" value="Enviar" id="btnProductoEnviar">
+                </form>
+            </div>
+            <div id="productos"></div>
+            <hr>
+            <div>
+                <h3>Centro de Mensajes</h3>
+                <h5>Compresión: <span id="porcentaje"></span>%</h5>
+                <form id="form_mensaje">
+                    <div class="form-group mb-3" >
+                        <input type="text" id="usermail" class="form-control" placeholder="Ingresá tu email">
+                        <div class="invalid-feedback"></div>
+                    </div>
+                    <div class="form-group mb-3" >
+                        <input type="text" id="nombre_usuario" class="form-control" placeholder="Ingresá tu nombre">
+                        <div class="invalid-feedback"></div>
+                    </div>
+                    <div class="form-group mb-3" >
+                        <input type="text" id="apellido" class="form-control" placeholder="Ingresá tu apellido">
+                        <div class="invalid-feedback"></div>
+                    </div>
+                    <div class="form-group mb-3" >
+                        <input type="number" id="edad" class="form-control" placeholder="Ingresá tu edad">
+                        <div class="invalid-feedback"></div>
+                    </div>
+                    <div class="form-group mb-3" >
+                        <input type="text" id="alias" class="form-control" placeholder="Ingresá un alias">
+                        <div class="invalid-feedback"></div>
+                    </div>
+                    <div class="form-group mb-3" >
+                        <input type="url" id="avatar" class="form-control" placeholder="Ingresá la url del avatar">
+                        <div class="invalid-feedback"></div>
+                        <div class="form-text">Image sample: https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50</div>
+                    </div>
+                    <div class="form-group mb-3" >
+                        <input type="text" id="mensaje" class="form-control" placeholder="Ingresá un mensaje">
+                        <div class="invalid-feedback"></div>
+                    </div>
+                    <div class="form-group mt-3">
+                        <input type="button" class="btn btn-primary" value="Enviar" id="btnMensajeEnviar">
+                    </div>
+                </form>
+                <div id="mensajes" class="my-3"></div>
+                </div>
+            </div>
+        </div>

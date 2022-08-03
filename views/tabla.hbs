@@ -1,0 +1,21 @@
+    {{#if items.length}}
+        <div class="mt-3">
+            <h2>Listado de Productos</h2>
+            <div class="table-responsive">
+                <table class="table table-dark">
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Precio</th>
+                        <th>Foto URL</th>
+                    </tr>
+                    {{#each items}}
+                    <tr>
+                        <td>{{this.nombre}}</td>
+                        <td>$ {{this.precio}}</td>
+                        <td><img width="50" src={{this.foto}}></td>
+                    </tr>
+                    {{/each}}
+                </table>
+            </div>
+        </div>
+    {{/if}}

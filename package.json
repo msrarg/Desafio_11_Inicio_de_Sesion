@@ -1,33 +1,35 @@
 {
-  "name": "desafio_11_inicio_de_sesion",
+  "name": "11-desafio",
   "version": "1.0.0",
-  "description": "Desafío N° 11: INICIO DE SESIÓN",
-  "main": "app.js",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node build_db.js && node server.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/msrarg/Desafio_11_Inicio_de_Sesion.git"
-  },
-  "author": "Mauricio Simón Rodriguez",
+  "keywords": [],
+  "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/msrarg/Desafio_11_Inicio_de_Sesion/issues"
-  },
-  "homepage": "https://github.com/msrarg/Desafio_11_Inicio_de_Sesion#readme",
   "dependencies": {
     "bcrypt": "^5.0.1",
-    "body-parser": "^1.20.0",
     "connect-mongo": "^4.6.0",
     "cookie-parser": "^1.4.6",
     "dotenv": "^16.0.1",
     "express": "^4.18.1",
     "express-handlebars": "^6.0.6",
     "express-session": "^1.17.3",
-    "handlebars": "^4.7.7",
-    "mongoose": "^6.4.6",
+    "hbs": "^4.2.0",
+    "knex": "^2.1.0",
+    "moongose": "^1.0.0",
+    "mysql": "^2.18.1",
+    "node-fetch": "^2.6.7",
+    "nodemon": "^2.0.19",
+    "normalizr": "^3.6.2",
     "passport": "^0.6.0",
-    "passport-local": "^1.0.0"
+    "passport-local": "^1.0.0",
+    "socket.io": "^4.5.1",
+    "sqlite3": "^5.0.8"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^7.3.0"
   }
 }
